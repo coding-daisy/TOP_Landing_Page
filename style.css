@@ -4,7 +4,7 @@ html {
     font-family: Roboto;
 }
 
-.top-dark-part {
+.top-part {
     background-color: #1F2937;
     color: white;
     display: flex;
@@ -16,7 +16,7 @@ html {
     min-width: 10px;
 }
 
-.inner-top-dark-part {
+.top-part .inner-part {
     flex: 4 1 900px;
 }
 
@@ -32,6 +32,8 @@ button {
     font-weight: bold;
     text-justify: center;
 }
+
+
 
 /* HEADER STYLING */
 
@@ -70,7 +72,9 @@ button {
     text-decoration: underline;
 }
 
-/* about-section-styling */
+
+
+/* ABOUT SECTION STYLING */
 
 .about-section {
     margin: 100px 0;
@@ -87,7 +91,7 @@ button {
 }
 
 
-.about-section .header-text {
+.about-section .title {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
@@ -116,17 +120,73 @@ button {
 
 }
 
-/* doesn't work: */
-/* 
-.about-section img {
-    min-width: 0;
-    flex: 1 1 auto;
-    height: auto;
-}
- */
-
  .about-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* INFORMATION SECTION STYLING */
+
+.information-section {
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+
+.information-section .inner-part {
+    width: 70%;
+}
+
+.information-section .title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+}
+
+.information-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.information-entity {
+    width: 20%;
+}
+
+.information-part .description {
+    text-align: center;
+    padding: 10px;
+}
+
+.information-part .image-wrapper {
+    aspect-ratio: 4/5;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.information-part img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.information-entity .title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.information-entity .descriptive-text {
+    padding-top: 10px;
+    color: darkslategrey;
+}
+
+.information-entity .emphasized-words {
+    font-weight: 600;
 }
