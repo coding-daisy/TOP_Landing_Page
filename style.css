@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: Roboto;
+}
+
+.top-dark-part {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.adapting-margin {
+    flex: 1 4 100px;
+    min-width: 10px;
+}
+
+.inner-top-dark-part {
+    flex: 4 1 900px;
+}
+
+button {
+    border-radius: 15px;
+    height:40px;
+    width: 120px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px;
+    font-weight: bold;
+    text-justify: center;
+}
+
+/* HEADER STYLING */
+
+.header {
+    position: stick;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    flex: 1;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.hidden-distance {
+    flex: 1 1 100px;
+    min-width: 100px;
+}
+.links {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* about-section-styling */
+
+.about-section {
+    margin: 100px 0;
+    display: flex;
+    flex: 1;
+    gap: 10%;
+    align-items: center;
+}
+
+.about-section .description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about-section .header-text {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.about-section .descriptive-text {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.about-section button {
+    align-self: center;
+}
+
+.about-section .image-wrapper {
+    width: 55%;
+    margin-left:auto;
+    aspect-ratio: 5/2;
+    overflow: hidden;
+    border-radius: 30px;
+    max-height: 400px;
+
+}
+
+/* doesn't work: */
+/* 
+.about-section img {
+    min-width: 0;
+    flex: 1 1 auto;
+    height: auto;
+}
+ */
+
+ .about-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
