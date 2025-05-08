@@ -22,20 +22,18 @@ html {
 
 button {
     border-radius: 15px;
-    height:40px;
-    width: 120px;
     background-color: #3882F6;
     color: white;
     font-weight: 500;
     font-size: 17px;
     padding: 5px;
     font-weight: bold;
-    text-justify: center;
+    text-align: center;
 }
 
 
 
-/* HEADER STYLING */
+/* HEADER */
 
 .header {
     position: stick;
@@ -74,7 +72,7 @@ button {
 
 
 
-/* ABOUT SECTION STYLING */
+/* ABOUT SECTION */
 
 .about-section {
     margin: 100px 0;
@@ -108,6 +106,9 @@ button {
 
 .about-section button {
     align-self: center;
+    border: none;
+    height:40px;
+    width: 120px;
 }
 
 .about-section .image-wrapper {
@@ -127,7 +128,7 @@ button {
 }
 
 
-/* INFORMATION SECTION STYLING */
+/* INFORMATION SECTION */
 
 .information-section {
     color: black;
@@ -145,7 +146,7 @@ button {
 .information-section .title {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+    color:  #1F2937;
     text-align: center;
 }
 
@@ -189,4 +190,107 @@ button {
 
 .information-entity .emphasized-words {
     font-weight: 600;
+}
+
+
+
+/* QUOTE SECTION */
+
+.quote-section {
+    padding: 50px 0;
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-section .inner-part {
+    color: #1F2937;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-section .quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    align-self: flex-start;
+    padding-right: 40px;
+}
+
+.quote-section .quote-author {
+    align-self: flex-end;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+
+/* INVITATION SECTION */
+.invitation-section {
+    display: flex;
+    justify-content: center;
+}
+
+.invitation-window {
+    border-radius: 10px;
+    padding: 40px 0;
+    background-color:#3882F6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 50px 0;
+}
+
+.invitation-window .inner-part {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.invitation-window .inner-part .text-part {
+    width: 65%;
+}
+
+.invitation-window .title {
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 0 10px 0;
+}
+
+.invitation-window .descriptive-text {
+    font-size: 18px;
+}
+
+.invitation-window .button-part {
+    max-width: 20%;
+    width: 200px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.invitation-window .button-part button {
+    width: 100%;
+    border-color: white;
+    border-style: solid;
+    box-shadow: none;
+    padding: 10px 0;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #1F2937;
+    padding: 20px 0;
+    color: #F9FAF8;
+}
+
+.footer .text {
+    text-align: center;
+
 }
