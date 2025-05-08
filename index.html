@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" />
+    <script src="script.java"></script>
   </head>
   <body>
     <div class="top-part">
@@ -36,7 +37,7 @@
                 Sign up now and join the awesome garlic community!
               </p>
             </div>
-            <button>Sign up</button>
+            <button id="sign-up-button-one" onclick="signUp();">Sign up</button>
           </div>
 
           <div class="image-wrapper">
@@ -130,7 +131,8 @@
         <div class="quote-text">
           When life gives you lemons, make lemonade.
           <br />
-          When life gives you garlic, start cooking and make it smell like magic.
+          When life gives you garlic, start cooking and make it smell like
+          magic.
         </div>
         <div class="quote-author">- creator of this page</div>
       </div>
@@ -142,14 +144,21 @@
           <div class="text-part">
             <div class="title">What are you waiting for?</div>
             <div class="descriptive-text">
-              Buy some garlic for you rnext dinner <br />
-              and sign up now to prove that you are a true garlic enthusiast.
+              Buy some garlic for you rnext dinner and sign up now to prove that
+              you are a true garlic enthusiast.
+              <br />
               You won't regret it!
             </div>
           </div>
           <div class="button-part">
-            <button>Buy garlic</button>
-            <button>Sign up</button>
+            <a
+              class="link-button"
+              href="https://www.thegarlicfarm.co.uk/collections/all-products"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Buy garlic</a
+            >
+            <button id="sign-up-button-two" onclick="signUp();">Sign up</button>
           </div>
         </div>
       </div>

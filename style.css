@@ -108,7 +108,7 @@ button {
     align-self: center;
     border: none;
     height:40px;
-    width: 120px;
+    padding: 5px 20px;
 }
 
 .about-section .image-wrapper {
@@ -274,12 +274,27 @@ button {
     gap: 10px;
 }
 
-.invitation-window .button-part button {
+.invitation-window .button-part button, .invitation-window .button-part .link-button {
     width: 100%;
-    border-color: white;
-    border-style: solid;
-    box-shadow: none;
+    border: 3px solid white;
     padding: 10px 0;
+}
+
+/* making <a> look like button */
+.invitation-window .button-part .link-button {
+    border-radius: 15px;
+    background-color: #3882F6;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.invitation-window .button-part .link-button:hover {
+    text-decoration: underline;
 }
 
 /* FOOTER */
